@@ -1,6 +1,25 @@
+# Downloads
 Music/
 Music 2/
-Music.zip
+*.zip
 links.txt
+cookies.txt
+
+# Python
 .venv/
+venv/
 __pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
