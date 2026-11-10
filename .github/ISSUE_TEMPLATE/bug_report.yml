@@ -1,0 +1,37 @@
+name: Bug report
+description: Something doesn't work as expected
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Many download errors are fixed by updating yt-dlp: `pip install -U yt-dlp`. Please try that first.
+        **Never paste cookies or private links.**
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command
+      render: shell
+      placeholder: ytmusic-dl "https://music.youtube.com/..." --zip
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Output (re-run with -v)
+      render: text
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Output of `ytmusic-dl --version` and `ytmusic-dl --check`, plus your OS.
+      render: text
+    validations:
+      required: true
